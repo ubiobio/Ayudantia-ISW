@@ -11,3 +11,5 @@
 | `__filename`                 | Variable global que contiene la ruta del archivo actual.                                                                 |
 | `require`                    | Función global que se utiliza para importar módulos en un archivo JavaScript.                                            |
 
+- [Volver a Modulos Core](../Core.md)
+- [Volver al indice](../../../README.md)

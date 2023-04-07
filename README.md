@@ -26,12 +26,7 @@ _Repositorio de las clases de ayudantia en la universidad_
 - Fundamentos de Node:
     - [NPM ( Node package manager)](./Node/NPM/NPM.md)
     - [Variables de entorno](./Node/VariablesDeEntorno/VariablesDeEntorno.md)
-    - [Modulos core:](./Node/ModulosCore/Core.md)
-        - Globals
-        - File System
-        - Console
-        - HTTP
-        - OS
+    - [Modulos core](./Node/ModulosCore/Core.md)
     - Manejo de Asincronia:
       - Async/Await
       - Promesas
