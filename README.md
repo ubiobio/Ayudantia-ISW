@@ -11,8 +11,6 @@ _Repositorio de las clases de ayudantia en la universidad_
 - [Node](https://nodejs.org/es) - Entorno de ejecución para JavaScript construido con V8, motor de JavaScript de Chrome.
     
 
-
-
 <summary>Requisitos minimos:</summary>
 
     - Fundamentos de programación
@@ -26,9 +24,9 @@ _Repositorio de las clases de ayudantia en la universidad_
 
 - Fundamentos de la Web: Protocolo HTTP, arquitectura cliente-servidor y modelo de solicitud y respuesta.
 - Fundamentos de Node:
-    - NPM ( Node package manager)
-    - Variables de entorno
-    - Modulos core:
+    - [NPM ( Node package manager)](./Node/NPM/NPM.md)
+    - [Variables de entorno](./Node/VariablesDeEntorno/VariablesDeEntorno.md)
+    - [Modulos core:](./Node/ModulosCore/Core.md)
         - Globals
         - File System
         - Console
