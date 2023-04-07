@@ -26,10 +26,7 @@ _Repositorio de las clases de ayudantia en la universidad_
     - [NPM ( Node package manager)](./Node/NPM/NPM.md)
     - [Variables de entorno](./Node/VariablesDeEntorno/VariablesDeEntorno.md)
     - [Modulos core](./Node/ModulosCore/Core.md)
-    - Manejo de Asincronia:
-      - Async/Await
-      - Promesas
-      - Callbacks
+    - [Manejo de Asincronia](./Node/Asincronia/Asincronia.md)
     - Manejo de errores
     
 
