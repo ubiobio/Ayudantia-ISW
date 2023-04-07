@@ -28,7 +28,6 @@ _Repositorio de las clases de ayudantia en la universidad_
     - [Modulos core](./Node/ModulosCore/Core.md)
     - [Manejo de Asincronia](./Node/Asincronia/Asincronia.md)
     - Manejo de errores
-    
 
 </details>
 
