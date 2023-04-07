@@ -19,7 +19,7 @@ _Repositorio de las clases de ayudantia en la universidad_
     - Fundamentos de Bases de datos
     - Fundamentos de Git
 
-<details>
+<details open>
 <summary>Roadmap backend</summary>
 
 - Fundamentos de la Web: Protocolo HTTP, arquitectura cliente-servidor y modelo de solicitud y respuesta.
