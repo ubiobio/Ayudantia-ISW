@@ -11,8 +11,7 @@ _Repositorio de las clases de ayudantia en la universidad_
 - [Node](https://nodejs.org/es) - Entorno de ejecución para JavaScript construido con V8, motor de JavaScript de Chrome.
     
 
-<summary>Requisitos minimos:</summary>
-
+- Requisitos minimos:
     - Fundamentos de programación
     - Fundamentos basicos de JavaScript
     - Fundamentos basicos de la Web
@@ -35,6 +34,8 @@ _Repositorio de las clases de ayudantia en la universidad_
     
 
 </details>
+
+## [Glosario de palabras](./Glosario/Glosario.md)
 
 ## Links de ayuda:
 
