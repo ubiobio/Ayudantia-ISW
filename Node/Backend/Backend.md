@@ -5,7 +5,7 @@
 3. [Arquitectura de nuestra aplicación](./Arquitectura.md)
 4. [MongoDB en la nube](./MongoDB.md)
 5. [Configuración de variables de entorno](./ConfigEnv.md)
-6. [Coneccion a la base de datos](./ConeccionDB.md)
+6. [Conexión a la base de datos](./ConeccionDB.md)
 
 
 
