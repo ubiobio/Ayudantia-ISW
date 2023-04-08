@@ -3,7 +3,7 @@
 _Repositorio de las clases de ayudantia en la universidad_
 
 
-<summary>Stack MERN:</summary>
+## Stack MERN
 
 - [MongoDB](https://www.mongodb.com) - Base de datos NoSQL
 - [Express](https://expressjs.com/) - Framework web rápido, minimalista y sin preferencias para Node.js
