@@ -21,14 +21,15 @@ _Repositorio de las clases de ayudantia en la universidad_
 <details open>
 <summary>Roadmap backend</summary>
 
-- Fundamentos de la Web: Protocolo HTTP, arquitectura cliente-servidor y modelo de solicitud y respuesta.
+- [Fundamentos de la Web](./Fundamentos/FundamentosWeb/Web.md)
+- [Fundamentos de backend](./Fundamentos/FundamentosBackend/Backend.md)
 - Fundamentos de Node:
     - [NPM ( Node package manager)](./Node/NPM/NPM.md)
     - [Variables de entorno](./Node/VariablesDeEntorno/VariablesDeEntorno.md)
     - [Modulos core](./Node/ModulosCore/Core.md)
     - [Manejo de Asincronia](./Node/Asincronia/Asincronia.md)
     - Manejo de errores
-
+- [Backend con Node](./Node/Backend/Backend.md)
 </details>
 
 ## [Glosario de palabras](./Glosario/Glosario.md)
