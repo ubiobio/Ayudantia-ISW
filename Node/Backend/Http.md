@@ -14,6 +14,15 @@
 - El servidor recibe la peticion y responde con una respuesta
 - El cliente recibe la respuesta y la muestra al usuario
 
+
+- Recuerda que una capa de la peticion es una URL
+- Ejemplo, la URL (http://localhost:3000/api/usuarios) esta compuesta por:
+  - Protocolo: http
+  - Host: localhost
+  - Puerto: 3000
+  - Ruta: /api/usuarios
+
+
 ```mermaid
 Cliente --> Servidor: Peticion
 Servidor --> Cliente: Respuesta
@@ -37,7 +46,7 @@ Servidor --> Cliente: Respuesta
     - 4xx: Error del cliente
     - 5xx: Error del servidor
 - Headers (Cabeceras):
-  - ¿Que informacion adicional necesitas? o ¿Como quieres que se envie la informacion?
+  - ¿Que informacion adicional necesitas? o ¿Como quieres que se envie la informacion? (Informacion contextual)
     - Cookies: Informacion que se guarda en el navegador
     - CORS: Politica de seguridad 
     - Accept: Tipo de contenido que aceptas

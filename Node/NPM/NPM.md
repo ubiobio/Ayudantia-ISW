@@ -14,4 +14,11 @@
 | `npm install <package> -D`      | Instala un paquete específico y lo agrega a la lista de dependencias de desarrollo en package.json.            | npm install -D dotenv   |
 | `npm install <package> -g`      | Instala un paquete específico de forma global en su sistema.                                                   | npm install -g nodemon  |
 
+### Ayuda y links:
+- [NPM](https://www.npmjs.com/)
+
+
+<br>
+
+- [Volver al BackEnd](../Backend/Backend.md)
  - [Volver al indice](../../README.md)
