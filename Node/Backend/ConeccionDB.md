@@ -1,4 +1,4 @@
-## Coneccion a la base de datos
+## Conexión a la base de datos
 
 - En esta sección vamos a ver como conectarnos a una base de datos desde Node.
 - Para esto vamos a usar el paquete [mongoose](https://mongoosejs.com/).
