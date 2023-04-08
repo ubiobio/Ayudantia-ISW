@@ -28,11 +28,11 @@
 ### Puntos clave:
 
 - Metodos:
-  - ¿Que quieres hacer?
+  - ¿Qué quieres hacer?
     - GET: Obtener informacion
     - POST: Crear informacion
-    - PUT/PATCH: Actualizar informacion
-    - DELETE: Eliminar informacion
+    - PUT/PATCH: Actualizar información
+    - DELETE: Eliminar información
 - Codigo de estado:
   - ¿Como a ido la operacion?
     - 1xx: Informacion
@@ -41,7 +41,7 @@
     - 4xx: Error del cliente
     - 5xx: Error del servidor
 - Headers (Cabeceras):
-  - ¿Que informacion adicional necesitas? o ¿Como quieres que se envie la informacion? (Informacion contextual)
+  - ¿Que información adicional necesitas? o ¿Como quieres que se envie la informacion? (Informacion contextual)
     - Cookies: Informacion que se guarda en el navegador
     - CORS: Politica de seguridad 
     - Accept: Tipo de contenido que aceptas

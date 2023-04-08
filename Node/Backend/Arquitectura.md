@@ -13,8 +13,10 @@
             - `/models`
       - `/utils`
       - `/config`
-    - `index.js`
-    - `.env`
+        - `/env`
+          - `.env`
+          - `config.js`
+      - `index.js`
     - `.gitignore`
     - `package.json`
     - `README.md`
