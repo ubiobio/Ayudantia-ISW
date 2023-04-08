@@ -14,5 +14,6 @@
 - El backend envía la respuesta al frontend.
 - El frontend recibe la respuesta y la muestra al usuario.
 
+
 - [Fundamentos de la Web](../FundamentosWeb/Web.md)
 - [Volver al inicio](../../README.md)
