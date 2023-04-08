@@ -23,11 +23,6 @@
   - Ruta: /api/usuarios
 
 
-```mermaid
-Cliente --> Servidor: Peticion
-Servidor --> Cliente: Respuesta
-```
-
 ![img.png](img.png)
 
 ### Puntos clave:
