@@ -18,7 +18,10 @@
 ![img_9.png](img_9.png)
 - Hacemos click en Connect y seleccionamos Connect your application.
 ![img_10.png](img_10.png)
-- _**Y copian esa url que se va a las variables de entorno.**_
+- ## _**Y copian esa url que se va a las variables de entorno.**_
+- Remplazan la palabra admin por el nombre de usuario que crearon en la base de datos.
+- Y remplazan la palabra password por la contraseña que crearon en la base de datos.
+
 - Y por último reiniciamos el servidor en caso de que estuviera corriendo. **Y listo ya tenemos nuestra base de datos en la nube.**
 
 

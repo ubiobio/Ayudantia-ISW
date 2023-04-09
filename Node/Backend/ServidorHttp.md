@@ -139,6 +139,15 @@ function respuestaError(res, status, error) {
 }
 
 ```
+# Importante!
+
+- Para _responder correctamente un objeto JSON_, en nuestro index.js agregamos el siguiente codigo:
+
+```js
+// Agregamos el siguiente codigo para que el servidor pueda responder correctamente un objeto json
+//*Debajo de la instancia de la aplicación*
+app.use(express.json());
+```
 
 ### Consideraciones de seguridad:
 
