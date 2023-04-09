@@ -69,7 +69,7 @@ app.listen(3000, () => {
 - Agregamos el siguiente codigo:
 
 ```js
-// Define una ruta para la página de 'acerca de'
+// Define una ruta para la página de 'usuarios'
 app.get('/api/usuarios', (req, res) => {
     res.send('Lista de usuarios');
 });
