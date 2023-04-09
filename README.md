@@ -13,7 +13,7 @@ _Repositorio de las clases de ayudantia en la universidad_
 
 - Requisitos minimos:
     - Fundamentos de programación
-    - Fundamentos basicos de JavaScript
+    - [Fundamentos basicos de JavaScript](./JavaScript/Fundamentos/Fundamentos.md)
     - Fundamentos basicos de la Web
     - Fundamentos de Bases de datos
     - Fundamentos de Git

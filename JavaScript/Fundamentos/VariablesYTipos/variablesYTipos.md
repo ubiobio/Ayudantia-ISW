@@ -1,4 +1,4 @@
-## Variables y tipos de datos
+## Variables, tipos de datos y operadores
 
 ### Variables
 
@@ -80,3 +80,7 @@ se remplaza el espacio por la siguiente letra en mayuscula, Ejemplo: "nombre com
   - `&&`: AND.
   - `||`: OR.
   - `!`: NOT.
+
+
+- [Volver a los fundamentos](../Fundamentos.md)
+- [Volver al inicio](../../../README.md)
