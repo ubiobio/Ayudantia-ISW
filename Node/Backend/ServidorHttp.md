@@ -1,6 +1,6 @@
 ## Servidor HTTP y Api rest desde Node
 
-## **_Recordar_**:
+## **_Recordar_**
 
 - **Instalar Postman o Insomnia para realizar las peticiones HTTP**.
 - Instalar el paquete `nodemon` de forma global en el sistema con el comando `npm install -g nodemon`.
@@ -17,21 +17,24 @@
 
 
 - Lista de los pasos a seguir:
-  - Crear nuestro servidor
-  - Crear nuestra base de datos:
-  - Crear la configuración de las variables de entorno
-  - Crear la conexion a la base de datos
-  - Crear nuestro modelo de datos:
-    - Usuario
-    - Tarea
-  - Crear las rutas de nuestra API REST:
-    - /usuarios
-    - /tareas
-  - Crear los controladores de nuestra API REST:
-    - /usuarios, GET, POST, PUT, DELETE
-    - /tareas , GET, POST, PUT, DELETE
-  - Crear los utils de nuestra API REST:
-    - responseHandler.js
+  - Parte 1:
+    - Crear nuestro servidor
+    - Crear nuestra base de datos
+    - Crear la configuración de las variables de entorno
+    - Crear la conexion a la base de datos
+  - Parte 2:
+    - Crear nuestro modelo de datos:
+      - Usuario
+      - Tarea
+    - Crear las rutas de nuestra API REST:
+      - /usuarios
+      - /tareas
+    - Crear los controladores de nuestra API REST:
+      - /usuarios, GET, POST, PUT, DELETE
+      - /tareas , GET, POST, PUT, DELETE
+  - Parte 3:
+    - Crear los utils de nuestra API REST:
+      - responseHandler.js
 
 - Estructura de carpetas:
 
@@ -56,11 +59,18 @@
 │   │   ├── configEnv.js
 │   │   └── server.js
 │   ├── .gitignore
-│   ├── package.json
-│   └── README.md
-└── README.md
+│   └──  package.json
 
 ````
+
+- Dentro del archivo `.gitignore` en la raiz del proyecto y agregar el siguiente contenido:
+
+```bash
+# Ignorar los archivos de configuración de node
+node_modules
+````
+----------------
+## Parte 1
 ### Creando nuestro servidor
 
 - Nos posicionamos con la terminal en la carpeta donde queremos crear nuestro proyecto.
@@ -218,7 +228,7 @@ mongoose.connect(dbUrl, options)
 
 ```
 
-- Importamos el archivo `db.js` en el archivo `server.js`:
+- Importamos el archivo `configDB.js` en el archivo `server.js`:
 
 ```js
 // Importa el archivo 'configEnv.js' para cargar las variables de entorno
@@ -245,10 +255,17 @@ app.listen(PORT, () => {
 
 ```
 
-[//]: # (## [Ejemplo practico de una API REST]&#40;./API-REST/miPrimeraApiRest.md&#41;)
+- Con todo lo anterior ya podemos conectarnos a la base de datos.
+- Reiniciamos el servidor con `Ctrl + C` y ejecutamos el comando `npm start` para iniciar el servidor.
+- Si todo sale bien, en la consola debería aparecer el mensaje `Conectado a la base de datos`.
+- Si aparece un error, revisar que la url de la base de datos sea correcta.
+----------------
+## Parte 2
+### Creando el modelo de datos
 
 
 
+----------------
 ### Consideraciones de seguridad:
 
   - Es recomendable separar los detalles al manejar errores, para evitar que se muestren detalles del sistema al usuario.
