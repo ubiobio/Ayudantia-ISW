@@ -17,8 +17,10 @@
       - `/config`
         - `/env`
           - `.env`
-          - `config.js`
-      - `index.js`
+          - `configEnv.js`
+        - `/db`
+          - `configDB.js`
+      - `server.js`
     - `.gitignore`
     - `package.json`
     - `README.md`

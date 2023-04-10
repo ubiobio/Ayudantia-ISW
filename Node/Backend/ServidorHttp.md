@@ -1,12 +1,72 @@
-## Servidor HTTP con Node
+## Servidor HTTP y Api rest desde Node
+
+## **_Recordar_**:
+
+- **Instalar Postman o Insomnia para realizar las peticiones HTTP**.
+- Instalar el paquete `nodemon` de forma global en el sistema con el comando `npm install -g nodemon`.
+
+## Objetivo de la Api rest, crear un TODO list con usuarios.
+
+- Explicacion de la problematica:
+  - Tenemos una lista de tareas pendientes.
+  - Cada tarea tiene un título y una descripcion.
+  - Cada tarea puede estar en estado incompleto o completada.
+  - Cada usuario tiene un nombre y un email.
+  - Cada usuario puede tener una lista de tareas completadas.
+  - Cada usuario puede tener una lista de tareas incompletas.
 
 
+- Lista de los pasos a seguir:
+  - Crear nuestro servidor
+  - Crear nuestra base de datos:
+  - Crear la configuración de las variables de entorno
+  - Crear la conexion a la base de datos
+  - Crear nuestro modelo de datos:
+    - Usuario
+    - Tarea
+  - Crear las rutas de nuestra API REST:
+    - /usuarios
+    - /tareas
+  - Crear los controladores de nuestra API REST:
+    - /usuarios, GET, POST, PUT, DELETE
+    - /tareas , GET, POST, PUT, DELETE
+  - Crear los utils de nuestra API REST:
+    - responseHandler.js
+
+- Estructura de carpetas:
+
+```bash
+├── NombreProyecto
+│   ├── node_modules
+│   ├── src
+│   │   ├── controllers
+│   │   │   ├── tareas.controller.js
+│   │   │   └── usuarios.controller.js
+│   │   ├── models
+│   │   │   ├── tarea.model.js
+│   │   │   └── usuario.model.js
+│   │   ├── routes
+│   │   │   ├── tareas.route.js
+│   │   │   └── usuarios.route.js
+│   │   │   └── router.js
+│   │   ├── utils
+│   │   │   └── responseHandler.js
+│   │   ├── .env
+│   │   ├── configDB.js
+│   │   ├── configEnv.js
+│   │   └── server.js
+│   ├── .gitignore
+│   ├── package.json
+│   └── README.md
+└── README.md
+
+````
 ### Creando nuestro servidor
 
 - Nos posicionamos con la terminal en la carpeta donde queremos crear nuestro proyecto.
 - Ejecutamos el comando `npm init` para crear el archivo `package.json` en el directorio actual.
 - Ejecutamos el comando `npm install express` para instalar el paquete `express` y agregarlo a la lista de dependencias en `package.json`.
-- Creamos el archivo `index.js` en la raiz del proyecto.
+- Creamos el archivo `server.js` en la carpeta src del proyecto.
 - Agregamos el siguiente codigo:
 
 ```js
@@ -30,136 +90,170 @@ app.listen(3000, () => {
 
 ```
 
-- Ejecutamos el comando `node index.js` para iniciar el servidor.
+- Ejecutamos el comando `node server.js` para iniciar el servidor.
 - Abrimos el navegador y accedemos a la dirección `http://localhost:3000/` para ver el mensaje de "Hola Mundo" en la pantalla.
 - Detenemos el servidor con `Ctrl + C`.
 
+
+
 ### Recomendacion:
 
-- Para evitar tener que ejecutar el comando `node index.js` cada vez que se realice un cambio en el código, se recomienda instalar el paquete `nodemon` de forma global en el sistema con el comando `npm install -g nodemon`.
-- Una vez instalado, ejecutamos el comando `nodemon index.js` para iniciar el servidor.
-- O tambien podemos agregar el script `start` en el archivo `package.json` para ejecutar el comando `nodemon index.js` con el comando `npm start`.
-- Ejemplo:
-    
+- Para evitar tener que ejecutar el comando `node server.js` cada vez que se realice un cambio en el código, se recomienda instalar el paquete `nodemon` de forma global en el sistema con el comando `npm install -g nodemon`.
+- Una vez instalado, ejecutamos el comando `nodemon server.js` para iniciar el servidor.
+- O tambien podemos agregar el script `start` en el archivo `package.json` para ejecutar el comando `nodemon server.js` con el comando `npm start`.
+  - Ejemplo:
+
     ```json
     {
-        "name": "servidor-http",
-        "version": "1.0.0",
-        "description": "Servidor HTTP con Node",
-        "main": "index.js",
-        "scripts": {
-            "start": "nodemon index.js"
-        },
-        "keywords": [
-            "node",
-            "backend",
-            "http"
-        ],
-        "author": "Camilo saez",
-        "license": "MIT",
-        "dependencies": {
-            "express": "^4.17.1"
-        }
+      "name": "servidor-http",
+      "version": "1.0.0",
+      "description": "Servidor HTTP con Node",
+      "main": "src/server.js",
+      "scripts": {
+        "start": "nodemon src/index.js"
+      },
+      "keywords": [
+        "node",
+        "backend",
+        "http"
+      ],
+      "author": "Camilo saez",
+      "license": "MIT",
+      "dependencies": {
+        "dotenv": "^16.0.3",
+        "express": "^4.17.1",
+        "mongoose": "^7.0.3"
+      }
     }
     ```
 - Cada vez que se realice un cambio en el código, el servidor se reiniciará automáticamente.
 
-### Agregando rutas
 
+### [Creando nuestra base de datos](./MongoDB.md)
+
+### Configurando las variables de entorno
+
+- Instalamos el paquete `dotenv` con el comando `npm install dotenv`.
+- Creamos el archivo `configEnv.js` en la carpeta src del proyecto.
 - Agregamos el siguiente codigo:
 
 ```js
-// Define una ruta para la página de 'usuarios'
-app.get('/api/usuarios', (req, res) => {
-    res.send('Lista de usuarios');
-});
+//Importa el modulo 'path' para obtener la ruta absoluta del archivo .env
+const path = require('path');
 
-// Define una ruta para la página de 'contacto'
-app.get('/api/contacto', (req, res) => {
-    res.send('Contacto');
-});
+// Obtiene la ruta absoluta del archivo .env
+const configEnv = () => {
+  const envFilePath = path.resolve(__dirname, `.env`);
+  // Carga las variables de entorno desde el archivo .env
+  require('dotenv').config({ path: envFilePath });
+    // Retorna un objeto con las variables de entorno
+  return {
+    PORT: process.env.PORT,
+    HOST: process.env.HOST,
+    URI: process.env.URI,
+  };
+};
 
-```
-- Abrimos el navegador y accedemos a las direcciones `http://localhost:3000/usuario` y `http://localhost:3000/contacto` para ver los mensajes de "Lista de usuarios" y "Contacto" en la pantalla.
-
-### Recibir info desde el cliente:
-
-- Recordemos que los datos que enviamos desde el cliente a través de una petición HTTP se envían en la URL o en el cuerpo de la petición.
-- Para recibir los datos enviados desde el cliente, podemos acceder a ellos a través de los objetos `req.query` y `req.body`.
-- Si nuestra URL es http://localhost:3000/usuario?nombre=camilo&apellido=saez, agregamos el siguiente codigo:
-
-```js
-// Define una ruta para la página de 'usuarios'
-app.get('/api/usuarios', (req, res) => {
-    // Recibe los datos enviados desde el cliente a través de la URL
-    const nombre = req.query?.nombre;
-    const apellido = req.query?.apellido;
-    
-    // Envía los datos recibidos al cliente
-    res.send(`Nombre: ${nombre} ${apellido} `);
-});
-
+module.exports = { configEnv };
 ```
 
-- Si nuestra URL es http://localhost:3000/usuario y enviamos los datos desde el cliente a través del cuerpo de la petición, agregamos el siguiente codigo:
-
-```js
-// Define una ruta para la página de 'usuarios'
-app.post('/api/usuarios', (req, res) => {
-    // Recibe los datos enviados desde el cliente a través del cuerpo de la petición
-    const nombre = req.body?.nombre;
-    const apellido = req.body?.apellido;
-    
-    // Envía los datos recibidos al cliente
-    res.send(`Nombre: ${nombre} ${apellido} `);
-});
-
-```
-
-### Estandarizar la respuesta del servidor:
-
-- Para estandarizar la respuesta del servidor, creamos una funcion que recibe como parametro el objeto `res` y devuelve un objeto con la estructura de la respuesta.
+- Importamos el archivo `configEnv.js` en el archivo `server.js`.
 - Agregamos el siguiente codigo:
 
 ```js
-// Función para estandarizar la respuesta del servidor
-function respuestaExistosa(res, status, data) {
-    return res.status(status).json({
-        status: status,
-        data: data
-    });
-}
-
-// Función para estandarizar la respuesta del servidor cuando ocurre un error
-function respuestaError(res, status, error) {
-    return res.status(status).json({
-        status: status,
-        error: error
-    });
-}
+// Importa el archivo 'configEnv.js' para cargar las variables de entorno
+const { configEnv } = require('./configEnv.js');
+// Obtiene las variables de entorno
+const { PORT, HOST, URI } = configEnv();
+// Importa el mÃ³dulo 'express' para crear la aplicaciÃ³n web
+const express = require('express');
+// Crea una instancia de la aplicaciÃ³n
+const app = express();
+// Define una ruta para la pÃ¡gina principal de la aplicaciÃ³n ('/')
+// Esta ruta responde con un mensaje de "Hola Mundo" cuando se accede a ella
+app.get('/', (req, res) => {
+  res.send('Hola Mundo');
+});
+// Inicia el servidor web en el puerto 3000
+// La funciÃ³n de callback muestra un mensaje en la consola indicando que el servidor estÃ¡ en ejecuciÃ³n
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en el puerto ${process.env.PORT}`);
+});
 
 ```
-# Importante!
 
-- Para _responder correctamente un objeto JSON_, en nuestro index.js agregamos el siguiente codigo:
+- Creamos el archivo `.env` en la carpeta src del proyecto.
+- Agregamos las siguientes variables de entorno:
+
+```env
+PORT=3000
+HOST=localhost
+URI=<Aqui va la url de la base de datos>
+```
+- Reiniciamos el servidor con `Ctrl + C` y ejecutamos el comando `npm start` para iniciar el servidor.
+
+### Creando la conexion a la base de datos
+
+- Instalamos el paquete `mongoose` con el comando `npm install mongoose`.
+- Creamos el archivo `configDB.js` en la carpeta raiz.
+- Agregamos el siguiente codigo:
 
 ```js
-// Agregamos el siguiente codigo para que el servidor pueda responder correctamente un objeto json
-//*Debajo de la instancia de la aplicación*
-app.use(express.json());
+// Importa el módulo 'mongoose' para crear la conexión a la base de datos
+const mongoose = require('mongoose');
+
+// Obtiene la url de la base de datos desde las variables de entorno
+const dbUrl = process.env.DB_URL;
+
+// Opciones de configuración para la conexión a la base de datos
+const options = {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+};
+
+// Conecta a la base de datos
+mongoose.connect(dbUrl, options)
+    .then(() => console.log('Conectado a la base de datos'))
+    .catch(err => console.log(err));
+
 ```
+
+- Importamos el archivo `db.js` en el archivo `server.js`:
+
+```js
+// Importa el archivo 'configEnv.js' para cargar las variables de entorno
+const { configEnv } = require('./configEnv.js');
+// Obtiene las variables de entorno
+const { PORT, HOST, URI } = configEnv();
+// Importa el archivo 'configDB.js' para crear la conexiÃ³n a la base de datos
+require('./configDB.js');
+// Importa el mÃ³dulo 'express' para crear la aplicaciÃ³n web
+const express = require('express');
+// Crea una instancia de la aplicaciÃ³n
+const app = express();
+// Define una ruta para la pÃ¡gina principal de la aplicaciÃ³n ('/')
+// Esta ruta responde con un mensaje de "Hola Mundo" cuando se accede a ella
+app.get('/', (req, res) => {
+  res.send('Hola Mundo');
+});
+// Inicia el servidor web en el puerto 3000
+// La funciÃ³n de callback muestra un mensaje en la consola indicando que el servidor estÃ¡ en ejecuciÃ³n
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en el puerto ${process.env.PORT}`);
+});
+
+
+```
+
+[//]: # (## [Ejemplo practico de una API REST]&#40;./API-REST/miPrimeraApiRest.md&#41;)
+
+
 
 ### Consideraciones de seguridad:
 
   - Es recomendable separar los detalles al manejar errores, para evitar que se muestren detalles del sistema al usuario.
   - Al usuario se le debe mostrar un mensaje genérico que no revele información sensible del sistema.
   - Al backend se le debe mostrar un mensaje detallado que ayude a identificar el error y solucionarlo.
-
-
-
-
-
-
 
 
 ### Ayuda y links
