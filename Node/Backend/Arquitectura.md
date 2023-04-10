@@ -8,10 +8,12 @@
         - `/controllers`
         - `/middlewares`
         - `/routes`
+          - `router.js`
       - `/services`
         - `/db`
             - `/models`
       - `/utils`
+        - `responseHandler.js`
       - `/config`
         - `/env`
           - `.env`
