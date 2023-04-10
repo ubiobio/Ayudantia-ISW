@@ -17,12 +17,12 @@
 
 
 - Lista de los pasos a seguir:
-  - Parte 1:
+  - [Parte 1: Configuraciones iniciales](#parte-1--configuraciones-iniciales)
     - Crear nuestro servidor
     - Crear nuestra base de datos
     - Crear la configuración de las variables de entorno
     - Crear la conexion a la base de datos
-  - Parte 2:
+  - Parte 2: Crear nuestra API REST
     - Crear nuestro modelo de datos:
       - Usuario
       - Tarea
@@ -32,7 +32,7 @@
     - Crear los controladores de nuestra API REST:
       - /usuarios, GET, POST, PUT, DELETE
       - /tareas , GET, POST, PUT, DELETE
-  - Parte 3:
+  - Parte 3: Mejoras a nuestra API REST
     - Crear los utils de nuestra API REST:
       - responseHandler.js
 
@@ -70,7 +70,7 @@
 node_modules
 ````
 ----------------
-## Parte 1
+## Parte 1: Configuraciones iniciales
 ### Creando nuestro servidor
 
 - Nos posicionamos con la terminal en la carpeta donde queremos crear nuestro proyecto.
@@ -100,7 +100,7 @@ app.listen(3000, () => {
 
 ```
 
-- Ejecutamos el comando `node server.js` para iniciar el servidor.
+- Ejecutamos el comando `node src/server.js` para iniciar el servidor.
 - Abrimos el navegador y accedemos a la dirección `http://localhost:3000/` para ver el mensaje de "Hola Mundo" en la pantalla.
 - Detenemos el servidor con `Ctrl + C`.
 
@@ -108,9 +108,9 @@ app.listen(3000, () => {
 
 ### Recomendacion:
 
-- Para evitar tener que ejecutar el comando `node server.js` cada vez que se realice un cambio en el código, se recomienda instalar el paquete `nodemon` de forma global en el sistema con el comando `npm install -g nodemon`.
-- Una vez instalado, ejecutamos el comando `nodemon server.js` para iniciar el servidor.
-- O tambien podemos agregar el script `start` en el archivo `package.json` para ejecutar el comando `nodemon server.js` con el comando `npm start`.
+- Para evitar tener que ejecutar el comando `node src/server.js` cada vez que se realice un cambio en el código, se recomienda instalar el paquete `nodemon` de forma global en el sistema con el comando `npm install -g nodemon`.
+- Una vez instalado, ejecutamos el comando `nodemon src/server.js` para iniciar el servidor.
+- O tambien podemos agregar el script `start` en el archivo `package.json` para ejecutar el comando `nodemon src/server.js` con el comando `npm start`.
   - Ejemplo:
 
     ```json
