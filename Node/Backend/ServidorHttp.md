@@ -490,7 +490,13 @@ app.listen(PORT, () => {
 - Si vamos a la ruta `http://localhost:3000/api/usuarios` con el método `POST` y enviamos un JSON con los datos de un usuario, deberíamos ver un mensaje de éxito.
 - Si volvemos a la ruta `http://localhost:3000/api/usuarios` deberíamos ver un array con el usuario que acabamos de crear.
 
+# TAREA
 
+- Crear el controlador de tareas con los siguientes métodos:
+  - getTareas: Obtiene todas las tareas de la base de datos.
+  - createTarea: Crea una nueva tarea en la base de datos.
+- Crear las rutas para las tareas.
+- Agregar las rutas de tareas al enrutador principal.
 
 ----------------
 ### Consideraciones de seguridad:
