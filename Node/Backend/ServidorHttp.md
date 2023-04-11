@@ -283,6 +283,78 @@ app.listen(PORT, () => {
 - Cada modelo de datos tiene un nombre que representa la colección en la base de datos.
 
 
+- Para este ejemplo, cada usuario almacenará multiples tareas. Pero cada tarea solo puede pertenecer a un usuario.
+  - Ejemplo:
+![img_11.png](img_11.png)
+
+
+### Creando el modelo de usuario
+
+- Creamos el archivo `usuario.model.js` en la carpeta `src/models`.
+- Agregamos el siguiente codigo:
+
+```js
+// Importa el módulo 'mongoose' para crear la conexión a la base de datos
+const mongoose = require('mongoose');
+
+// Crea el esquema de la colección 'usuarios'
+const usuarioSchema = new mongoose.Schema({
+  nombre: {
+    type: String,
+    required: true,
+  },
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+});
+
+// Crea el modelo de datos 'Usuario' a partir del esquema 'usuarioSchema'
+const Usuario = mongoose.model('Usuario', usuarioSchema);
+
+// Exporta el modelo de datos 'Usuario'
+module.exports = Usuario;
+
+```
+
+### Creando el modelo de tarea
+
+- Creamos el archivo `tarea.model.js` en la carpeta `src/models`.
+- Agregamos el siguiente codigo:
+
+```js
+// Importa el módulo 'mongoose' para crear la conexión a la base de datos
+const mongoose = require('mongoose');
+
+// Crea el esquema de la colección 'tareas'
+const tareaSchema = new mongoose.Schema({
+  titulo: {
+    type: String,
+    required: true,
+  },
+  descripcion: {
+    type: String,
+    required: true,
+  },
+  estado: {
+    type: Boolean,
+    required: true,
+  },
+  usuario: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Usuario',
+    required: true,
+  },
+});
+
+// Crea el modelo de datos 'Tarea' a partir del esquema 'tareaSchema'
+const Tarea = mongoose.model('Tarea', tareaSchema);
+
+// Exporta el modelo de datos 'Tarea'
+module.exports = Tarea;
+
+```
 
 ----------------
 ### Consideraciones de seguridad:

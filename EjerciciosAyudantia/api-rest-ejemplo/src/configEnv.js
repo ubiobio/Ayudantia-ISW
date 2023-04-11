@@ -10,7 +10,7 @@ const configEnv = () => {
   return {
     PORT: process.env.PORT,
     HOST: process.env.HOST,
-    URI: process.env.URI,
+    DB_URL: process.env.DB_URL,
   };
 };
 
