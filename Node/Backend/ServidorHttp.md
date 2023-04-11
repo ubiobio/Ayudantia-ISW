@@ -239,7 +239,7 @@ mongoose.connect(dbUrl, options)
 const { configEnv } = require('./configEnv.js');
 
 // Obtiene las variables de entorno
-const { PORT, HOST, URI } = configEnv();
+const { PORT } = configEnv();
 
 // Importa el archivo 'configDB.js' para crear la conexiÃ³n a la base de datos
 require('./configDB.js');
@@ -259,7 +259,7 @@ app.get('/', (req, res) => {
 // Inicia el servidor web en el puerto 3000
 // La funciÃ³n de callback muestra un mensaje en la consola indicando que el servidor estÃ¡ en ejecuciÃ³n
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo en el puerto ${process.env.PORT}`);
+  console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
 
 
