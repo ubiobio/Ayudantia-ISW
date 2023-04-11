@@ -123,7 +123,7 @@ app.listen(3000, () => {
       "description": "Servidor HTTP y Api Rest con Node",
       "main": "src/server.js",
       "scripts": {
-        "start": "nodemon src/index.js"
+        "start": "nodemon src/server.js"
       },
       "keywords": [
         "node",
