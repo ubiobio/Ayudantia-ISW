@@ -166,7 +166,7 @@ module.exports = { configEnv };
 ```
 
 - Importamos el archivo `configEnv.js` en el archivo `server.js`.
-- Agregamos el siguiente codigo:
+- Quedando de la siguiente manera:
 
 ```js
 // Importa el archivo 'configEnv.js' para cargar las variables de entorno
@@ -203,7 +203,7 @@ URI=<Aqui va la url de la base de datos>
 ### Creando la conexion a la base de datos
 
 - Instalamos el paquete `mongoose` con el comando `npm install mongoose`.
-- Creamos el archivo `configDB.js` en la carpeta raiz.
+- Creamos el archivo `configDB.js` en la carpeta `src`.
 - Agregamos el siguiente codigo:
 
 ```js
@@ -227,6 +227,7 @@ mongoose.connect(dbUrl, options)
 ```
 
 - Importamos el archivo `configDB.js` en el archivo `server.js`:
+- Quedando de la siguiente manera:
 
 ```js
 // Importa el archivo 'configEnv.js' para cargar las variables de entorno
