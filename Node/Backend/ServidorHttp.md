@@ -173,7 +173,7 @@ module.exports = { configEnv };
 const { configEnv } = require('./configEnv.js');
 
 // Obtiene las variables de entorno
-const { PORT, HOST, URI } = configEnv();
+const { PORT } = configEnv();
 
 // Importa el mÃ³dulo 'express' para crear la aplicaciÃ³n web
 const express = require('express');
