@@ -76,7 +76,7 @@ node_modules
 - Nos posicionamos con la terminal en la carpeta donde queremos crear nuestro proyecto.
 - Ejecutamos el comando `npm init` para crear el archivo `package.json` en el directorio actual.
 - Ejecutamos el comando `npm install express` para instalar el paquete `express` y agregarlo a la lista de dependencias en `package.json`.
-- Creamos el archivo `server.js` en la carpeta src del proyecto.
+- Creamos el archivo `server.js` en la carpeta `/src` del proyecto.
 - Agregamos el siguiente codigo:
 
 ```js
@@ -262,6 +262,12 @@ app.listen(PORT, () => {
 ----------------
 ## Parte 2
 ### Creando el modelo de datos
+
+- Las entidades de la base de datos se representan con modelos de datos.
+- Los modelos de datos son clases que heredan de la clase `Schema` de `mongoose`.
+- Cada modelo de datos representa una colección en la base de datos.
+- Cada modelo de datos tiene un esquema que define las propiedades de los documentos de la colección.
+- Cada modelo de datos tiene un nombre que representa la colección en la base de datos.
 
 
 
