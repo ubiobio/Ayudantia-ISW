@@ -201,7 +201,7 @@ app.listen(PORT, () => {
 ```env
 PORT=3000
 HOST=localhost
-URI=<Aqui va la url de la base de datos>
+DB_URL=<Aqui va la url de la base de datos>
 ```
 - Reiniciamos el servidor con `Ctrl + C` y ejecutamos el comando `npm start` para iniciar el servidor.
 
