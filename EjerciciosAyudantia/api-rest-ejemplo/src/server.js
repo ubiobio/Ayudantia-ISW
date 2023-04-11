@@ -16,6 +16,9 @@ require('./configDB.js');
 // Crea una instancia de la aplicaciÃÂÃÂ³n
 const app = express();
 
+// Agrega el middleware para el manejo de datos en formato JSON
+app.use(express.json());
+
 // Define una ruta para la pÃÂÃÂ¡gina principal de la aplicaciÃÂÃÂ³n ('/')
 // Esta ruta responde con un mensaje de "Hola Mundo" cuando se accede a ella
 app.get('/', (req, res) => {
