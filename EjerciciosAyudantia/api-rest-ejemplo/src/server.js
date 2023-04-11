@@ -1,6 +1,9 @@
 // Importa el archivo 'configEnv.js' para cargar las variables de entorno
 const { configEnv } = require('./configEnv.js');
 
+// Importa el enrutador principal
+const indexRoutes = require('./routes/index.routes.js');
+
 // Obtiene las variables de entorno
 const { PORT } = configEnv();
 
@@ -19,6 +22,8 @@ app.get('/', (req, res) => {
   res.send('Hola Mundo');
 });
 
+// Agrega el enrutador principal al servidor
+app.use('/api', indexRoutes);
 // Inicia el servidor web en el puerto 3000
 // La funciÃÂ³n de callback muestra un mensaje en la consola indicando que el servidor estÃÂ¡ en ejecuciÃÂ³n
 app.listen(PORT, () => {

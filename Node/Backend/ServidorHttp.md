@@ -355,6 +355,97 @@ const Tarea = mongoose.model('Tarea', tareaSchema);
 module.exports = Tarea;
 ```
 
+### Creando el controlador de usuarios
+
+- Creamos el archivo `usuario.controller.js` en la carpeta `src/controllers`.
+- Agregamos el siguiente codigo:
+
+```js
+// Importa el modelo de datos 'Usuario'
+const Usuario = require('../models/usuario.model.js');
+
+exports.getUsuarios = async (req, res) => {
+  try {
+    const usuarios = await Usuario.find();
+    res.status(200).json(usuarios);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
+exports.createUsuario = async (req, res) => {
+  try {
+    const usuario = new Usuario({
+      nombre: req.body.nombre,
+      email: req.body.email,
+    });
+
+    const nuevoUsuario = await usuario.save();
+    res.status(201).json(nuevoUsuario);
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+};
+```
+
+### Creando rutas para los usuarios
+
+- Creamos el archivo `usuario.routes.js` en la carpeta `src/routes`.
+- Agregamos el siguiente codigo:
+
+```js
+// Importa el módulo 'express' para crear las rutas
+const express = require('express');
+
+// Importa el controlador de usuarios
+const usuarioController = require('../controllers/usuario.controller.js');
+
+// Crea una instancia del enrutador
+const router = express.Router();
+
+// Define las rutas para los usuarios
+router.get('/', usuarioController.getUsuarios);
+router.post('/', usuarioController.createUsuario);
+
+// Exporta el enrutador
+module.exports = router;
+```
+
+### Creamos el enrutador principal
+
+- Creamos el archivo `index.routes.js` en la carpeta `src/routes`.
+- Agregamos el siguiente codigo:
+
+```js
+// Importa el módulo 'express' para crear las rutas
+const express = require('express');
+
+// Importa el enrutador de usuarios
+const usuarioRoutes = require('./usuario.routes.js');
+
+// Crea una instancia del enrutador
+const router = express.Router();
+
+// Define las rutas para los usuarios /api/usuarios
+router.use('/usuarios', usuarioRoutes);
+
+// Exporta el enrutador
+module.exports = router;
+```
+
+### Agregamos el enrutador principal al servidor
+
+- En el archivo `src/server.js` agregamos el siguiente codigo:
+
+```js
+// Importa el enrutador principal
+const indexRoutes = require('./routes/index.routes.js');
+
+// Agrega el enrutador principal al servidor
+app.use('/api', indexRoutes);
+```
+
+
 ----------------
 ### Consideraciones de seguridad:
 
