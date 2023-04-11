@@ -37,7 +37,7 @@
       - responseHandler.js
 
 - Estructura de carpetas:
-
+  - A lo largo de este tutorial se ira creando la estructura de carpetas del proyecto, pero para tener una idea de como quedara el proyecto al final, se muestra la siguiente estructura:
 ```bash
 ├── NombreProyecto
 │   ├── node_modules
@@ -76,7 +76,7 @@ node_modules
 - Nos posicionamos con la terminal en la carpeta donde queremos crear nuestro proyecto.
 - Ejecutamos el comando `npm init` para crear el archivo `package.json` en el directorio actual.
 - Ejecutamos el comando `npm install express` para instalar el paquete `express` y agregarlo a la lista de dependencias en `package.json`.
-- Creamos el archivo `server.js` en la carpeta `/src` del proyecto.
+- Creamos el archivo `server.js` en la carpeta `/src` del proyecto. ( `src` es la carpeta donde se guardan los archivos fuente del proyecto, recuerda crearla)
 - Agregamos el siguiente codigo:
 
 ```js
