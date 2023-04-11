@@ -22,7 +22,7 @@
     - Crear nuestra base de datos
     - Crear la configuración de las variables de entorno
     - Crear la conexion a la base de datos
-  - Parte 2: Crear nuestra API REST
+  - [Parte 2: Crear nuestra API REST](#parte-2--crear-nuestra-api-rest)
     - Crear nuestro modelo de datos:
       - Usuario
       - Tarea
@@ -273,7 +273,7 @@ app.listen(PORT, () => {
 - Si todo sale bien, en la consola debería aparecer el mensaje `Conectado a la base de datos`.
 - Si aparece un error, revisar que la url de la base de datos sea correcta.
 ----------------
-## Parte 2
+## Parte 2: Crear nuestra API REST
 ### Creando el modelo de datos
 
 - Las entidades de la base de datos se representan con modelos de datos.
@@ -435,7 +435,7 @@ module.exports = router;
 
 ### Agregamos el enrutador principal al servidor
 
-- En el archivo `src/server.js` agregamos el siguiente codigo:
+- En el archivo `src/server.js` deberia quedar asi:
 
 ```js
 // Importa el archivo 'configEnv.js' para cargar las variables de entorno
@@ -445,7 +445,7 @@ const { configEnv } = require('./configEnv.js');
 const express = require('express');
 
 // Importa el enrutador principal
-const indexRoutes = require('./routes/index.routes.js');
+const indexRoutes = require('./router/index.routes.js');
 
 // Obtiene las variables de entorno
 const { PORT } = configEnv();
