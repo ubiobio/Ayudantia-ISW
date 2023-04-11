@@ -115,9 +115,9 @@ app.listen(3000, () => {
 
     ```json
     {
-      "name": "servidor-http",
+      "name": "api-rest",
       "version": "1.0.0",
-      "description": "Servidor HTTP con Node",
+      "description": "Servidor HTTP y Api Rest con Node",
       "main": "src/server.js",
       "scripts": {
         "start": "nodemon src/index.js"
@@ -130,9 +130,7 @@ app.listen(3000, () => {
       "author": "Camilo saez",
       "license": "MIT",
       "dependencies": {
-        "dotenv": "^16.0.3",
-        "express": "^4.17.1",
-        "mongoose": "^7.0.3"
+        "express": "^4.17.1"
       }
     }
     ```
