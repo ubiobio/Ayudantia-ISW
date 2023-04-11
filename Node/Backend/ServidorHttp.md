@@ -504,7 +504,7 @@ app.listen(PORT, () => {
 - Crear las rutas para las tareas.
 - Agregar las rutas de tareas al enrutador principal.
 
-## [Codigo fuente de la clase](../)
+## [Codigo fuente de la clase](../../EjerciciosAyudantia/api-rest-ejemplo)
 
 ----------------
 ### Consideraciones de seguridad:
