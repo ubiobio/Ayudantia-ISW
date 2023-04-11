@@ -488,6 +488,13 @@ app.listen(PORT, () => {
 
 - Si vamos a la ruta `http://localhost:3000/api/usuarios` deberíamos ver un array vacío.
 - Si vamos a la ruta `http://localhost:3000/api/usuarios` con el método `POST` y enviamos un JSON con los datos de un usuario, deberíamos ver un mensaje de éxito.
+  - Ejemplo de JSON:
+  ```json
+  {
+    "nombre":"MiNombre",
+    "email":"nombre@correo.com"
+  }
+  ```
 - Si volvemos a la ruta `http://localhost:3000/api/usuarios` deberíamos ver un array con el usuario que acabamos de crear.
 
 # TAREA
