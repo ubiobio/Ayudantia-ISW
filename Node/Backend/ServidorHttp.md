@@ -454,7 +454,7 @@ const { configEnv } = require('./configEnv.js');
 const express = require('express');
 
 // Importa el enrutador principal
-const indexRoutes = require('./router/index.routes.js');
+const indexRoutes = require('./routes/index.routes.js');
 
 // Obtiene las variables de entorno
 const { PORT } = configEnv();
@@ -497,6 +497,8 @@ app.listen(PORT, () => {
   - createTarea: Crea una nueva tarea en la base de datos.
 - Crear las rutas para las tareas.
 - Agregar las rutas de tareas al enrutador principal.
+
+## [Codigo fuente de la clase](../)
 
 ----------------
 ### Consideraciones de seguridad:
