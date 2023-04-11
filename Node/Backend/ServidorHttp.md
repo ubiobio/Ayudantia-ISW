@@ -353,7 +353,6 @@ const Tarea = mongoose.model('Tarea', tareaSchema);
 
 // Exporta el modelo de datos 'Tarea'
 module.exports = Tarea;
-
 ```
 
 ----------------
