@@ -485,8 +485,8 @@ app.listen(PORT, () => {
 
 
 ```
-- Si vamos a la ruta `http://localhost:3000/api/usuarios` deberíamos ver un array vacío.
-- Si vamos a la ruta `http://localhost:3000/api/usuarios` con el método `POST` y enviamos un JSON con los datos de un usuario, deberíamos ver un mensaje de éxito.
+- Si realizamos una peticion `GET` a la ruta `http://localhost:3000/api/usuarios` deberíamos ver un array vacío.
+- Si vamos a la ruta `http://localhost:3000/api/usuarios` con el método `POST` ( Esto debe realizarse con Postman o Insomnia ) y enviamos un JSON con los datos de un usuario, deberíamos ver un mensaje de éxito.
   - Ejemplo de JSON:
   ```json
   {
