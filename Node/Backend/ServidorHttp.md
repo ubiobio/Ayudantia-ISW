@@ -494,7 +494,7 @@ app.listen(PORT, () => {
     "email":"nombre@correo.com"
   }
   ```
-- Si volvemos a la ruta `http://localhost:3000/api/usuarios` deberíamos ver un array con el usuario que acabamos de crear.
+- Realizamos una peticion `GET` a la ruta `http://localhost:3000/api/usuarios` y deberíamos ver un array con el usuario que acabamos de crear.
 
 # TAREA
 
