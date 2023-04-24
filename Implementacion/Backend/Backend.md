@@ -29,12 +29,20 @@ En nuestro contexto de proyecto la construccion del backend es primero. Consider
    - Mongoose nos permite definir relaciones entre entidades.
    - Mongoose nos permite definir validaciones para cada atributo de cada entidad.
    
-4. **`Creacion de las rutas:`** 
+4. **`Creacion de las rutas:`** En el contexto de nuestra API, la manera de interactuar con la base de datos es a traves de las rutas.
+   Entonces la idea es crear una ruta para cada operacion que queramos realizar con la base de datos o con la logica de negocio.
+      - Para crear las rutas utilizaremos el paquete [Express](https://expressjs.com/).
+      - Express nos permite definir rutas para cada operacion ya sea CRUD u otra logica.
+      - Express nos permite definir controladores para cada ruta.
+      - Estas rutas apuntan a un controlador que se encarga de realizar la logica de negocio.
+      - El controlador interactua con un servicio que se encarga de interactuar con la base de datos.
 
-   - Para crear las rutas utilizaremos el paquete [Express](https://expressjs.com/).
-   - Express nos permite definir rutas para cada operacion CRUD.
-   - Express nos permite definir controladores para cada ruta.
-   - Express nos permite definir validaciones para cada ruta.
+   
+    
+
+
+
+
 
 ____
 - [Volver atras](../ReqToCode.md)
