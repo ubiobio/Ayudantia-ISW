@@ -31,10 +31,18 @@ _Repositorio de las clases de ayudantia en la universidad_
     - [Manejo de Asincronia](./Node/Asincronia/Asincronia.md)
     - Manejo de errores
 - [Backend con Node](./Node/Backend/Backend.md)
-- [Desde requisitos a código](./Node/Requisitos/Requisitos.md)
+- [Desde requisitos a código](./Implementacion/ReqToCode.md)
 </details>
 
-## [Glosario de palabras](./Glosario/Glosario.md)
+<details open>
+<summary>Roadmap frontend</summary>
+
+- [Fundamentos de la Web](./Fundamentos/FundamentosWeb/Web.md)
+- [Fundamentos de frontend](./Fundamentos/FundamentosFrontend/Frontend.md)
+- [Ejemplo clase frontend](./EjemploFullStack)
+
+</details>
+
 
 ## Links de ayuda:
 
