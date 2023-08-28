@@ -1,8 +1,8 @@
-# Ayudantias 2023-1 INGENIERÍA DE SOFTWARE
+# Ayudantias 2023-2 INGENIERÍA DE SOFTWARE
 
 _Repositorio de las clases de ayudantia en la universidad_
 
-## [Template del proyecto](https://github.com/UBB-IECI/Template-ISW-Proyecto)
+## ~~[Template del proyecto](https://github.com/UBB-IECI/Template-ISW-Proyecto)~~
 
 ## Stack MERN
 
@@ -17,7 +17,7 @@ _Repositorio de las clases de ayudantia en la universidad_
     - [Fundamentos basicos de JavaScript](./JavaScript/Fundamentos/Fundamentos.md)
     - Fundamentos basicos de la Web
     - Fundamentos de Bases de datos
-    - Fundamentos de Git
+    - [Fundamentos de Git](./Fundamentos/FundamentosGit/Git.md)
 
 <details open>
 <summary>Roadmap backend</summary>

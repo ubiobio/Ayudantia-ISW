@@ -1,2 +1,0 @@
-- [Volver a los fundamentos](../Fundamentos.md)
-- [Volver al inicio](../../../README.md)
