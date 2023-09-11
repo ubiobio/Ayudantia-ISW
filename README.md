@@ -43,6 +43,9 @@ _Repositorio de las clases de ayudantia en la universidad_
 
 </details>
 
+## [Codigo de las clases](./ClasesAyudantia/Clases.md)
+
+
 
 ## Links de ayuda:
 
