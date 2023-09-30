@@ -1,0 +1,52 @@
+{
+  "env": {
+    "commonjs": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["google"],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "require-jsdoc": [
+      "warn",
+      {
+        "require": {
+          "FunctionDeclaration": true,
+          "MethodDefinition": true,
+          "ClassDeclaration": true,
+          "ArrowFunctionExpression": true,
+          "FunctionExpression": true
+        }
+      }
+    ],
+    "indent": "off",
+    "new-cap": "off",
+    "object-curly-spacing": ["error", "always"],
+    "array-bracket-spacing": "off",
+    "max-len": [
+      "error",
+      {
+        "code": 100,
+        "tabWidth": 2,
+        "comments": 150
+      }
+    ],
+    "valid-jsdoc": "off",
+    "no-console": "warn",
+    "quotes": ["error", "double"],
+    "operator-linebreak": [
+      "warn",
+      "before",
+      {
+        "overrides": {
+          ":": "before",
+          "=": "after"
+        }
+      }
+    ],
+    "no-trailing-spaces": "off",
+    "linebreak-style": "off"
+  }
+}
