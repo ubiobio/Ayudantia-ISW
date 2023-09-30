@@ -10,7 +10,7 @@ En nuestro contexto de proyecto la construccion del backend es primero. Consider
     - Se escogen las posibles soluciones.
     - _`TIP`_: Recuerden otorgar valor con sus requisitos funcionales.
       - Sus requisitos funcionales deben ser entendibles por cualquier persona.
-      - Sus requisitos funcionales deben responder a la pregunta: **Como** usuario **quiero** poder hacer algo **para** poder obtener algo.
+      - Sus requisitos funcionales deben responder a la pregunta: **Como**, **quiero**, **para**.
       - Ejemplo: "_**Como** usuario **quiero** poder ver los productos que mas se venden **para** poder comprarlos._"
     ### *Las operaciones CRUD, para este proyecto y contexto NO son requisitos funcionales.*
 2. **`Modelando el problema:`**
