@@ -14,7 +14,7 @@ En nuestro contexto de proyecto la construccion del backend es primero. Consider
       - Ejemplo: "_**Como** usuario **quiero** poder ver los productos que mas se venden **para** poder comprarlos._"
     ### *Las operaciones CRUD, para este proyecto y contexto NO son requisitos funcionales.*
 2. **`Modelando el problema:`**
-   Hay que tener encuenta que MongoDB es una base de datos NoSQL, por lo tanto no es necesario realizar un modelo relacional. 
+   Hay que tener en cuenta que MongoDB es una base de datos NoSQL, por lo tanto, no es necesario realizar un modelo relacional. 
    Sin embargo, es necesario realizar un modelo de datos para poder identificar las entidades, atributos y relaciones del problema.
    Y luego este modelo de datos hecho por nosotros se debe transformar en un modelo de datos para MongoDB.
       - Identificar las entidades del problema.
@@ -30,14 +30,16 @@ En nuestro contexto de proyecto la construccion del backend es primero. Consider
    - Mongoose nos permite definir validaciones para cada atributo de cada entidad.
    
 4. **`Creacion de las rutas:`** En el contexto de nuestra API, la manera de interactuar con la base de datos es a traves de las rutas.
-   Entonces la idea es crear una ruta para cada operacion que queramos realizar con la base de datos o con la logica de negocio.
+   Entonces la idea es crear una ruta para cada operación que queramos realizar con la base de datos o con la logica de negocio.
       - Para crear las rutas utilizaremos el paquete [Express](https://expressjs.com/).
-      - Express nos permite definir rutas para cada operacion ya sea CRUD u otra logica.
+      - Express nos permite definir rutas para cada operación ya sea CRUD u otra lógica.
       - Express nos permite definir controladores para cada ruta.
-      - Estas rutas apuntan a un controlador que se encarga de realizar la logica de negocio.
-      - El controlador interactua con un servicio que se encarga de interactuar con la base de datos.
+      - Estas rutas apuntan a un controlador que se encarga de realizar la lógica de negocio.
 
-   
+5. **`Creacion de los servicios y controladores`** 
+   - Una vez definidas las rutas, es necesario crear los controladores y servicios para cada ruta.
+   - Los controladores se encargan de recibir los datos de la petición y enviarlos al servicio.
+   - Los servicios se encargan de interactuar con la base de datos.
     
 
 
