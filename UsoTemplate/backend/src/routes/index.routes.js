@@ -8,6 +8,8 @@ const userRoutes = require("./user.routes.js");
 /** Enrutador de autenticación */
 const authRoutes = require("./auth.routes.js");
 
+const productRoutes = require("./product.routes.js");
+
 /** Middleware de autenticación */
 const authenticationMiddleware = require("../middlewares/authentication.middleware.js");
 
@@ -18,6 +20,8 @@ const router = express.Router();
 router.use("/users", authenticationMiddleware, userRoutes);
 // Define las rutas para la autenticación /api/auth
 router.use("/auth", authRoutes);
+
+router.use("/product", productRoutes);
 
 // Exporta el enrutador
 module.exports = router;

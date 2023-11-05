@@ -2,8 +2,7 @@
 
 _Repositorio de las clases de ayudantia en la universidad_
 
-## ~~[Template del proyecto](https://github.com/UBB-IECI/Template-ISW-Proyecto)~~
-
+## [Template del proyecto](https://github.com/UBB-IECI/Template-ISW-Proyecto)
 ## Stack MERN
 
 - [MongoDB](https://www.mongodb.com) - Base de datos NoSQL
@@ -39,8 +38,7 @@ _Repositorio de las clases de ayudantia en la universidad_
 
 - [Fundamentos de la Web](./Fundamentos/FundamentosWeb/Web.md)
 - [Fundamentos de frontend](./Fundamentos/FundamentosFrontend/Frontend.md)
-- [Ejemplo clase frontend](./EjemploFullStack)
-
+- [Fundamentos de React](./React/React.md)
 </details>
 
 ## [Codigo de las clases](./ClasesAyudantia/Clases.md)

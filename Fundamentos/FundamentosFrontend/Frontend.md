@@ -24,7 +24,6 @@
 
 - [Recursos para las interfaces](https://www.figma.com/community)
 - [Documentacion oficial de  React](https://es.react.dev/)
-- [Documentacion oficial de Next](https://nextjs.org/docs/getting-started)
 
 
 
