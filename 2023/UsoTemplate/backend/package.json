@@ -1,0 +1,34 @@
+{
+  "name": "api-node",
+  "version": "1.0.0",
+  "description": "API con Node",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "keywords": [
+    "node",
+    "backend",
+    "http"
+  ],
+  "author": "Camilo saez",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "cookie-parser": "1.4.6",
+    "cors": "2.8.5",
+    "dotenv": "16.3.1",
+    "express": "4.18.2",
+    "joi": "17.10.2",
+    "jsonwebtoken": "9.0.2",
+    "mongoose": "7.5.2",
+    "morgan": "1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "8.50.0",
+    "eslint-config-google": "0.14.0",
+    "jsdoc": "4.0.2",
+    "nodemon": "3.0.1",
+    "prettier": "3.0.3"
+  }
+}
