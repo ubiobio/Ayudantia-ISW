@@ -1,5 +1,5 @@
 export let pokemones = [
-    //TODO: Pokemones
+    //IMPORTANT: Pokemones
     {
         id: 1,
         nombre: "Pikachu",
@@ -25,3 +25,4 @@ export let pokemones = [
         descripcion: "Squirtle es una pequeña tortuga que puede disparar chorros de agua. Squirtle es conocido por ser amigable y leal."
     }
 ]
+

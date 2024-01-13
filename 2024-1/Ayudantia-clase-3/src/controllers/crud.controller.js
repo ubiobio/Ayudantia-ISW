@@ -1,7 +1,7 @@
 import { pokemones } from "../utils/pokemones.js";
 import crypto from "crypto";
 
-//TODO: Crear un pokémon
+//IMPORTANT: Crear un pokémon
 export const crearPokemon = async (req, res) => {
     try {
         const pokemon = req.body;
@@ -23,7 +23,7 @@ export const crearPokemon = async (req, res) => {
     }
 };
 
-//Todo: Obtener un pokémon por el id
+//IMPORTANT: Obtener un pokémon por el id
 export const obtenerPokemon = async (req, res) => {
     try {
         const id = req.params.id;
@@ -45,7 +45,7 @@ export const obtenerPokemon = async (req, res) => {
     }
 };
 
-//TODO: Obtener todos los pokemones
+//IMPORTANT: Obtener todos los pokemones
 export const obtenerPokemones = async (req, res) => {
     try {
         res.status(200).json({
@@ -57,7 +57,7 @@ export const obtenerPokemones = async (req, res) => {
     }
 };
 
-//TODO: Obtener un pokémon aleatorio
+//IMPORTANT: Obtener un pokémon aleatorio
 export const pokemonAleatorio = async (req, res) => {
     try {
         const randomNum = crypto.randomInt(1, 4);
@@ -79,7 +79,7 @@ export const pokemonAleatorio = async (req, res) => {
     }
 };
 
-//TODO: Modificar un pokémon
+//IMPORTANT: Modificar un pokémon
 export const modificarPokemon = async (req, res) => {
     try {
         const id = req.params.id;
@@ -107,7 +107,7 @@ export const modificarPokemon = async (req, res) => {
     }
 };
 
-//TODO: Modificar parcialmente a un pokémon
+//IMPORTANT: Modificar parcialmente a un pokémon
 export const modificarParcialPokemon = async (req, res) => {
     try {
         const id = req.params.id;
@@ -135,7 +135,7 @@ export const modificarParcialPokemon = async (req, res) => {
     }
 };
 
-//TODO: Eliminar un pokémon
+//IMPORTANT: Eliminar un pokémon
 export const eliminarPokemon = async (req, res) => {
     try {
         const id = req.params.id;
