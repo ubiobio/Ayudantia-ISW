@@ -1,6 +1,6 @@
 ## Ayudantía Ingenieria de Software
 
-En este repositorio encontrarás el contenido de la ayudantía n° 1, en donde se realizó:
+En este repositorio encontrarás el contenido de la ayudantía n°1, en donde se realizó:
 
 <details open>
 <summary>Introducción</summary>
@@ -8,7 +8,7 @@ En este repositorio encontrarás el contenido de la ayudantía n° 1, en donde s
 - [MongoDB](./Introduccion/MongoDB.md)
 - [Node.js](./Introduccion/Nodejs.md)
 - [Express.js](./Introduccion/Expressjs.md)
-- [React.js](./Introduccion/Reactjs.md)
+- [React](./Introduccion/React.md)
 - [JavaScript](./Introduccion/JavaScript.md)
 
 </details>
@@ -39,5 +39,6 @@ En este repositorio encontrarás el contenido de la ayudantía n° 1, en donde s
 - [Auto Rename Tag](./Extensiones%20recomendadas/Auto%20Rename%20Tag.md)
 - [Better Comments](./Extensiones%20recomendadas/Better%20Comments.md)
 - [Thunder Client](./Extensiones%20recomendadas/Thunder%20Client.md)
+- [ESLint](./Extensiones%20recomendadas/ESLint.md)
 
 </details>
