@@ -7,7 +7,7 @@ En este repositorio encontrarás el contenido de la ayudantía n°1, en donde se
 
 - [MongoDB](./Introduccion/MongoDB.md)
 - [Node.js](./Introduccion/Nodejs.md)
-- [Express.js](./Introduccion/Expressjs.md)
+- [Express.js](./Introduccion/Expressjs/Expressjs.md)
 - [React](./Introduccion/React.md)
 - [JavaScript](./Introduccion/JavaScript.md)
 
@@ -16,7 +16,7 @@ En este repositorio encontrarás el contenido de la ayudantía n°1, en donde se
 <details open>
 <summary>Arquitectura Cliente/Servidor</summary>
 
-- [Cliente/Servidor](./Arquitectura%20Cliente-Servidor/Cliente-Servidor.md)
+- [Cliente/Servidor](./Cliente-Servidor/Cliente-Servidor.md)
 
 </details>
 
