@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,7 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
+    "eslint": "^8.56.0",
     "nodemon": "^3.0.2"
   }
 }

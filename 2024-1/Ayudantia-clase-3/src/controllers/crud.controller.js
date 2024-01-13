@@ -1,5 +1,5 @@
 import { pokemones } from "../utils/pokemones.js";
-import crypto from 'crypto';
+import crypto from "crypto";
 
 //TODO: Crear un pokémon
 export const crearPokemon = async (req, res) => {
