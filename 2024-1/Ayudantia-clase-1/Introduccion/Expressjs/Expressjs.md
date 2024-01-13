@@ -3,6 +3,10 @@
 
 Express.js es un framework utilizado con Node.js que facilita la creación de aplicaciones web y APIs. Proporciona una serie de características y funcionalidades que permiten construir aplicaciones de manera eficiente y rápida. 
 
+- Documentación oficial de Express.js: https://expressjs.com/
+- [Código ejemplo de implementación Express.js básica.](./Codigo/)
+
+
 Aquí hay algunas cosas que puedes hacer con Express.js:
 
 1. Creación de Aplicaciones Web:
@@ -76,6 +80,3 @@ Aquí hay algunas cosas que puedes hacer con Express.js:
     node index.js o node server.js
     ```
     - Esto iniciará tu aplicación y la hará accesible en 'http://localhost:3000' (o el puerto que hayas especificado en tu código)
-
-- [Código ejemplo de implementación Express.js básica](./Codigo/)
-- Documentación oficial de Express.js: https://expressjs.com/
