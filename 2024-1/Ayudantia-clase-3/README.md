@@ -1,6 +1,6 @@
 ## Ayudantía Ingenieria de Software
 
-En este repositorio encontrarás el código de la ayudantía n° 1, en donde se realizó:
+En este repositorio encontrarás el código de la ayudantía n° 3, en donde se realizó:
 
 - Inicialización del proyecto con `npm init -y`
 - Instalación de dependencia, como por ejemplo:
