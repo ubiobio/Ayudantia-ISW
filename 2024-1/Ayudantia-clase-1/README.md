@@ -14,6 +14,13 @@ En este repositorio encontrarás el contenido de la ayudantía n°1, en donde se
 </details>
 
 <details open>
+<summary>Introducción a Notion</summary>
+
+- [Notion](./Introduccion%20Notion/Notion.md)
+
+</details>
+
+<details open>
 <summary>Arquitectura Cliente/Servidor</summary>
 
 - [Cliente/Servidor](./Cliente-Servidor/Cliente-Servidor.md)

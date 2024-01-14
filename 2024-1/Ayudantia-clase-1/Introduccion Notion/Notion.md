@@ -20,9 +20,9 @@ Algunas características clave de Notion incluyen:
 7. Aplicaciones Móviles y de Escritorio:
     - Notion está disponible como aplicación web, así como aplicaciones de escritorio y móviles, lo que permite acceder y trabajar en tus documentos desde diferentes dispositivos.
 
-#### Instalación de Notion como aplicación de escritorio
+### Instalación de Notion como aplicación de escritorio
 
-Para Windows:
+#### Para Windows:
 
 1. Visita el Sitio Web de Notion:
     - Abre tu navegador web y visita el sitio web oficial de Notion en https://www.notion.so/.
@@ -36,7 +36,7 @@ Para Windows:
 4. Inicia Notion:
     - Una vez completada la instalación, puedes iniciar Notion desde el menú de inicio o el escritorio.
 
-Para macOS:
+#### Para macOS:
 
 1. Visita el App Store:
     - Abre la App Store en tu Mac.
