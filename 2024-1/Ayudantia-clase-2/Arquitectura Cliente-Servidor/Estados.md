@@ -18,5 +18,5 @@ A continuación se presentan algunos de los códigos de estado HTTP más comunes
 
 ### Algunas recomendaciones de métodos http
 
-![arquitecturacliente-servidor.png](../images/Métodos%20HTTP.png)
+![arquitecturacliente-servidor.png](../images/Estados.png)
 
