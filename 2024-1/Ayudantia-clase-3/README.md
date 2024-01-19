@@ -1,17 +1,44 @@
 ## Ayudantía Ingenieria de Software
 
-En este repositorio encontrarás el código de la ayudantía n° 3, en donde se realizó:
+En este repositorio encontrarás el contenido de la ayudantía n°3, en donde se realizó:
 
-- Inicialización del proyecto con `npm init -y`
-- Instalación de dependencia, como por ejemplo:
-    - express: `npm i express`
-    - nodemon: `npm i -D nodemon`
-- Estructuración de carpetas para que se vayan acostumbrando a como utilizar las carpetas, para en un futuro utilizar el patrón de diseño DDD simplificado.
-- CRUD básico sin base de datos.
-- Peticiones de tipo:
-    - post
-    - get
-    - put
-    - patch
-    - delete
-- Para realizar las peticiones se utilizó Postman.
+<details open>
+<summary>Todo lo que debes saber de las APIs</summary>
+
+- [Conocimiento de APIs](./APIs/APIs.md)
+
+</details>
+
+<details open>
+<summary>Fundamentos de la web</summary>
+
+- [Cliente/Servidor](./FundamentosWeb/Cliente-Servidor/Cliente-Servidor.md)
+- [Métodos HTTP](./FundamentosWeb/MetodosHTTP/HTTP.md)
+- [Estados (status)](./FundamentosWeb/Estados/Status.md)
+- [Cuerpo (Body)](./FundamentosWeb/Cuerpo/Body.md)
+- [Parámetros (Queries)](./FundamentosWeb/Parametros/Queries.md)
+- [Cabeceras (Headers)](./FundamentosWeb/Cabeceras/Headers.md)
+
+</details>
+
+<details open>
+<summary>Introducción y instalación de Postman</summary>
+
+- [Postman](./Introduccion-Postman/Postman.md)
+
+</details>
+
+<details open>
+<summary>Explicación Url</summary>
+
+- [URL](./Explicacion-URL/URL.md)
+
+</details>
+
+<details open>
+<summary>Crud sin base de datos</summary>
+
+- [CRUD](./Codigo-CRUD/README.md)
+- [Peticiones a los endpoints](./Codigo-CRUD/Postman-Endpoints/Peticiones.md)
+
+</details>
