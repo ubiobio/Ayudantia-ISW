@@ -1,5 +1,7 @@
 
-## Cabeceras (Headers)
+## Cabecera HTTP
+
+Una cabecera HTTP es un campo de una solicitud o respuesta HTTP que transmite contexto y metadatos adicionales sobre la solicitud o respuesta. Por ejemplo, un mensaje de solicitud puede utilizar cabeceras para indicar sus formatos de medios preferidos, mientras que una respuesta puede utilizar cabeceras para indicar el formato de medios del cuerpo devuelto. Las cabeceras no distinguen entre mayúsculas y minúsculas, comienzan al principio de una línea y van seguidas inmediatamente por un ":" y un valor dependiente de la cabecera. El valor termina en el siguiente CRLF o al final del mensaje.
 
 #### ¿De que forma lo queremos hacer?
 

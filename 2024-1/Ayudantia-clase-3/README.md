@@ -14,10 +14,10 @@ En este repositorio encontrarás el contenido de la ayudantía n°3, en donde se
 
 - [Cliente/Servidor](./FundamentosWeb/Cliente-Servidor/Cliente-Servidor.md)
 - [Métodos HTTP](./FundamentosWeb/MetodosHTTP/HTTP.md)
-- [Estados (status)](./FundamentosWeb/Estados/Status.md)
+- [Estado de respuesta HTTP](./FundamentosWeb/Estados/Status.md)
+- [Cabecera HTTP](./FundamentosWeb/Cabeceras/Headers.md)
 - [Cuerpo (Body)](./FundamentosWeb/Cuerpo/Body.md)
 - [Parámetros (Queries)](./FundamentosWeb/Parametros/Queries.md)
-- [Cabeceras (Headers)](./FundamentosWeb/Cabeceras/Headers.md)
 
 </details>
 
@@ -29,9 +29,10 @@ En este repositorio encontrarás el contenido de la ayudantía n°3, en donde se
 </details>
 
 <details open>
-<summary>Explicación Url</summary>
+<summary>Las URLs</summary>
 
-- [URL](./Explicacion-URL/URL.md)
+- [¿Qué es una URL?](./Explicacion-URL/URL/URL.md)
+- [Anatomía de una URL](./Explicacion-URL/Anatomia/Anatomia-URL.md)
 
 </details>
 
