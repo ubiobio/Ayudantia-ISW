@@ -5,7 +5,7 @@ _Repositorio de las clases de ayudantia en la universidad_
 - [Clase 1 - Introducción a la ayudantía y Notion](./Ayudantia-clase-1/)
 - [Clase 2 - Fundamentos de git y JavaScript](./Ayudantia-clase-2/)
 - [Clase 3 - CRUD sin base de datos](./Ayudantia-clase-3/)
-- [Clase 4 - CRUD con base de datos + Patrón de diseño DDD simplificado]
+- [Clase 4 - CRUD con base de datos + Patrón de diseño DDD simplificado](./Ayudantia-clase-4/)
 - [Clase 5 - Explicación template backend + testing con Postman]
 - [Clase 6 - Avances entrega 1 backend y resolver dudas]
 - [Clase 7 - Introducción al frontend y React (hooks y components)]
