@@ -24,7 +24,10 @@ En este repositorio encontrarás el contenido de la ayudantía n°4, en donde se
 <details open>
 <summary>CRUD con Base de Datos!</summary>
 
-- [Ejemplo Práctico](./CRUD-Database/README.md)
+- [Código](./CRUD-Database/)
+- [Conexión a MongoDB Atlas](./Conexion-MongoDB/mongodb.md)
+- [Peticiones a los endpoints](./Postman-Endpoints/Endpoints.md)
+- [Reto de la clase](./Reto/reto.md)
 
 </details>
 

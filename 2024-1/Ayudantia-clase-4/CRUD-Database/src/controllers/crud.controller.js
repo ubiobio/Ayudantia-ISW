@@ -70,7 +70,7 @@ export const pokemonAleatorio = async (req, res) => {
 export const modificarPokemon = async (req, res) => {
     try {
         const id = req.params.id;
-        const pokemon = req.body
+        const pokemon = req.body;
 
         const poke = await Pokemon.findByIdAndUpdate(id, pokemon, {new: true});
 
@@ -96,7 +96,7 @@ export const modificarPokemon = async (req, res) => {
 export const modificarParcialPokemon = async (req, res) => {
     try {
         const id = req.params.id;
-        const pokemon = req.body
+        const pokemon = req.body;
 
         const poke = await Pokemon.findByIdAndUpdate(id, pokemon, {new: true});
 
