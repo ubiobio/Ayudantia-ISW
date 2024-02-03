@@ -95,7 +95,6 @@ export const modificarPokemon = async (req, res) => {
         }
 
         pokemones[index] = pokemon
-        console.log(pokemones[index])
 
         res.status(200).json({
             message: "Pokémon actualizado correctamente!",
@@ -123,7 +122,6 @@ export const modificarParcialPokemon = async (req, res) => {
         }
 
         pokemones[index] = pokemon
-        console.log(pokemones[index])
 
         res.status(200).json({
             message: "Pokémon actualizado correctamente!",
