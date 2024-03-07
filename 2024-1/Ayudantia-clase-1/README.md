@@ -1,5 +1,5 @@
 > [!TIP]
-> En este repositorio encontrarás el contenido de la ayudantía n°1
+> ¡Bienvenido! Este repositorio está repleto del material que necesitas para la ayudantía n°1 de Ingeniería de Software. ¡Échale un vistazo y saca el máximo provecho de él!.
 
 ## Ayudantía Ingenieria de Software
 
