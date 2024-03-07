@@ -1,6 +1,7 @@
-## Ayudantía Ingenieria de Software
+> [!TIP]
+> En este repositorio encontrarás el contenido de la ayudantía n°1
 
-En este repositorio encontrarás el contenido de la ayudantía n°1, en donde se realizó:
+## Ayudantía Ingenieria de Software
 
 <details open>
 <summary>Introducción</summary>
@@ -47,5 +48,26 @@ En este repositorio encontrarás el contenido de la ayudantía n°1, en donde se
 - [Better Comments](./Extensiones%20recomendadas/Better%20Comments.md)
 - [Thunder Client](./Extensiones%20recomendadas/Thunder%20Client.md)
 - [ESLint](./Extensiones%20recomendadas/ESLint.md)
+
+</details>
+
+<details open>
+<summary>Introducción a la terminal y línea de comandos</summary>
+
+- [Terminal y línea de comandos](./Terminal/terminal.md)
+
+</details>
+
+<details open>
+<summary>Fundamentos de Git</summary>
+
+- [Git](./Git/git.md)
+
+</details>
+
+<details open>
+<summary>Creación repositorio en GitHub</summary>
+
+- [Mi primer repositorio en GitHub](./Repositorio/repositorio.md)
 
 </details>
