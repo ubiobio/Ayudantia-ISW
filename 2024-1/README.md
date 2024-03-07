@@ -1,6 +1,7 @@
-# Ayudantias 2024-1 INGENIERÍA DE SOFTWARE
+> [!TIP]
+> ¡Bienvenido al Repositorio de la Ayudantía 2024-1 de la Universidad! Aquí podrás encontrar el contenido de cada clase, así como recursos adicionales para reforzar tu aprendizaje. Explora y aprovecha al máximo esta plataforma para potenciar tu éxito académico.
 
-_Repositorio de las clases de ayudantia en la universidad_
+## Ayudantias 2024-1 INGENIERÍA DE SOFTWARE 🚀
 
 - [Clase 1 - Introducción a la ayudantía y Notion](./Ayudantia-clase-1/)
 - [Clase 2 - Fundamentos de git y JavaScript](./Ayudantia-clase-2/)
@@ -14,7 +15,7 @@ _Repositorio de las clases de ayudantia en la universidad_
 - [Clase 10 - Avances entrega 2 frontend/backend y resolver dudas]
 - [Clase 11 - Avances entrega 2 frontend/backend y resolver dudas]
 
-## Links de ayuda:
+## Links de ayuda 📈
 
 - [Roadmaps](https://roadmap.sh/) -> roadmap.sh es un esfuerzo de la comunidad para crear hojas de ruta, guías y otros contenidos educativos que ayuden a los desarrolladores a coger el camino y orientar sus aprendizajes.
 - [MDN](https://developer.mozilla.org/es/) -> Documentación de Mozilla sobre desarrollo web
