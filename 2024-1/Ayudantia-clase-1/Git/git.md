@@ -24,6 +24,28 @@ Puedes conectar tu repositorio a un servidor remoto, por ejemplo GitHub y así p
 - `git pull` : Traer los cambios que están en el repositorio remoto (GitHub) al repositorio local.
 - `git config --list` : Muestra la lista de configuración de git.
 
+#### Recomendaciones!
+
+Recuerda que Git está optimizado para trabajar en equipo, por lo tanto, debemos darle un poco de información sobre nosotros. No debemos hacerlo todas las veces que ejecutamos un comando, basta con ejecutar solo una sola vez los siguientes comandos con tu información:
+
+- `git config --global user.email "Tu correo"`
+- `git config --global user.name "Tu nombre"`
+
+Si por algún motivo te equivocaste en el nombre o email que configuraste al principio, lo puedes modificar de la siguiente manera:
+
+- `git config --global --replace-all user.email "Tu correo"`
+- `git config --global --replace-all user.name "Tu nombre"`
+
+O si deseas eliminar y añadir un nuevo nombre:
+
+- `git config --global --unset-all user.name "Nombre antiguo"`
+- `git config --global --add user.name "Nuevo nombre"`
+
+Para el email es:
+
+- `git config --global --unset-all user.email "Email antiguo"`
+- `git config --global --add user.email "Nuevo email"`
+
 #### ¿Qué es el staging?
 
 El staging es el lugar donde se guardan temporalmente los cambios, para luego ser llevados definitivamente al repositorio. El repositorio es el lugar donde se guardan todos los registros de los cambios realizados a los archivos.

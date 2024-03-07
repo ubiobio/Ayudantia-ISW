@@ -11,4 +11,4 @@ El cliente también puede ofrecer una interfaz de usuario intuitiva y atractiva.
 
 En resumen, la arquitectura cliente/servidor se centra en el cliente como punto de acceso para los usuarios finales. El cliente interactúa con el servidor para realizar tareas y procesar información, ofreciendo una interfaz intuitiva y funcionalidades adicionales para mejorar la experiencia del usuario.
 
-![arquitecturacliente-servidor.png](../images/Arquitecturacliente-servidor.png)
+![arquitecturacliente-servidor.png](../images/Arquitectura%20cliente-servidor.png)

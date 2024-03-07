@@ -12,10 +12,10 @@
 5. Una vez instalada, puedes activarla yendo a Archivo > Preferencias > Tema de iconos y seleccionando "Material Icon Theme".
 
 
-#### Iconos de los archivos que proporciona "Material Icon Theme":
+#### Iconos de los archivos que proporciona Material Icon Theme
 
 ![fileicon1.png](../images/fileIconsmaterialicontheme.png)
 
-#### Iconos de las carpetas que proporciona "Material Icon Theme":
+#### Iconos de las carpetas que proporciona Material Icon Theme
 ![fileicon1.png](../images/folderIconsmaterialicontheme.png)
 
