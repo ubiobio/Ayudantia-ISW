@@ -1,20 +1,12 @@
+> [!TIP]
+> ¡Bienvenido! Este repositorio está repleto del material que necesitas para la ayudantía n°2 de Ingeniería de Software. ¡Échale un vistazo y saca el máximo provecho de él!.
+
 ## Ayudantía Ingenieria de Software
 
-En este repositorio encontrarás el contenido de la ayudantía n°2, en donde se realizó:
-
 <details open>
-<summary>Fundamentos de git</summary>
+<summary>Recomendaciones!</summary>
 
-- [¿Qué es git?](./Fundamentos%20de%20git/git.md)
-- [Comando básicos](./Fundamentos%20de%20git/comandosBásicos.md)
-
-</details>
-
-<details open>
-<summary>Fundamentos de JavaScript</summary>
-
-- [¿Qué es JavaScript](./Fundamentos%20de%20JavaScript/JavaScript.md)
-- [Fundamentos de JavaScript](./Fundamentos%20de%20JavaScript/Fundamentosjavascript.md)
+- [Extensión Chrome - JSON Viewer](./Recomendaciones/JSON-Viewer.md)
 
 </details>
 
@@ -28,10 +20,29 @@ En este repositorio encontrarás el contenido de la ayudantía n°2, en donde se
 </details>
 
 <details open>
-<summary>Recomendaciones!</summary>
+<summary>Seguimos practicando con Git!</summary>
 
-- [¿Qué es GitHub?](./Recomendaciones/GitHub.md)
-- [¿Cómo funciona GitHub?](./Recomendaciones/Funcion-GitHub.md)
-- [Extensión Chrome - JSON Viewer](./Recomendaciones/JSON-Viewer.md)
+- [Git](./Fundamentos%20de%20git/git.md)
+
+</details>
+
+<details open>
+<summary>Fundamentos de JavaScript</summary>
+
+- [JavaScript](./Fundamentos%20de%20JavaScript/JavaScript.md)
+
+</details>
+
+<details open>
+<summary>Ejercicio de JavaScript</summary>
+
+- [Ejercicios](./Ejercicio%20JavaScript/ejercicio.md)
+
+</details>
+
+<details open>
+<summary>Nuestro primer servidor con Express.js</summary>
+
+- [Server con Express.js](./Server%20Express/)
 
 </details>
