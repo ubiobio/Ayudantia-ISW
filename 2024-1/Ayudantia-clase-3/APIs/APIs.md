@@ -1,3 +1,6 @@
+> [!NOTE]
+> Visita la documentación oficial de [Amazon](https://aws.amazon.com/es/api-gateway/) para encontrar más información sobre las APIs.
+
 
 ## ¿Qué es una API?
 
