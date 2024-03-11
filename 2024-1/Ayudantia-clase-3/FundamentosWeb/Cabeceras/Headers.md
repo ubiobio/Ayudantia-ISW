@@ -1,20 +1,51 @@
+> [!NOTE]
+> Si quieres saber más sobre las cabeceras HTTP no dudes en visitar la [documentación oficial de la web!](https://developer.mozilla.org/es/docs/Web/HTTP/Headers)
 
 ## Cabecera HTTP
 
-Una cabecera HTTP es un campo de una solicitud o respuesta HTTP que transmite contexto y metadatos adicionales sobre la solicitud o respuesta. Por ejemplo, un mensaje de solicitud puede utilizar cabeceras para indicar sus formatos de medios preferidos, mientras que una respuesta puede utilizar cabeceras para indicar el formato de medios del cuerpo devuelto. Las cabeceras no distinguen entre mayúsculas y minúsculas, comienzan al principio de una línea y van seguidas inmediatamente por un ":" y un valor dependiente de la cabecera. El valor termina en el siguiente CRLF o al final del mensaje.
+Las cabeceras HTTP permite al cliente y al servidor enviar información adicional junto a una petición o respuesta. Una cabecera de petición esta compuesta por su nombre (no sensible a las mayúsculas) seguido de dos puntos : , y a continuación su valor (sin saltos de línea). Los espacios en blanco a la izquierda del valor son ignorados. 
 
-#### ¿De que forma lo queremos hacer?
+### Algunas categorías que vamos a utilizar en algunas clases
 
-Las cabeceras HTTP son parte esencial de las solicitudes y respuestas HTTP, proporcionando información clave sobre el objeto solicitado. Aquí está un resumen de su importancia:
+#### Autenticación
 
-- **Formato MIME**: Define el tipo de contenido del objeto solicitado.
-- **Lengua preferida**: Indica el idioma preferido para recibir el objeto.
-- **Autenticación**: Se utiliza para verificar la identidad del usuario o del servidor.
-- **Control de caché**: Indica cómo debe almacenarse el contenido en caché.
-- **Cookies**: Se utilizan para almacenar información del usuario.
-- **CORS (Cross-Origin Resource Sharing)**: Permite o restringe recursos solicitados de un dominio diferente.
-- **Accept**: Indica los tipos de medios que son aceptables para la respuesta.
-- **Authorization**: Proporciona credenciales para autenticar al usuario.
-- **Cache-Control**: Define cómo y por cuánto tiempo un recurso específico puede ser almacenado en caché.
-- **Content-Type**: Indica el tipo de medio del contenido del recurso.
-- **Content-Length**: Indica el tamaño del cuerpo de la entidad, en bytes.
+En esta categoría utilizaremos la cabecera:
+
+- `Authorization` : Proporciona el método de autenticación que debería ser usado para tener acceso al contenido de algún recurso.
+
+#### Gestión de conexiones
+
+En esta categoría utilizaremos la cabecera:
+
+- `Connection` : Controla si la conexión a la red se mantiene activa después de que la transacción en curso haya finalizado.
+
+#### Negociación de contenido
+
+En esta categoría utilizaremos las cabeceras:
+
+- `Accept` : Informa al servidor sobre los diferentes tipos de datos que pueden enviarse de vuelta. Es de tipo MIME.
+- `Accept-Encoding` : Informa al servidor sobre el algoritmo de codificación, que puede utilizarse sobre el recurso que se envíe de vuelta en la respuesta.
+
+#### Cookies
+
+En esta categoría utilizaremos la cabecera:
+
+- `Cookie` : Contiene [HTTP cookies](https://developer.mozilla.org/es/docs/Web/HTTP/Cookies) enviada previamente por el servidor con la cabecera `Set-Cookie`.
+
+#### Mensajes sobre la información del cuerpo (body)
+
+En esta categoría utilizaremos las cabeceras:
+
+- `Content-Length` : Indica el tamaño del cuerpo del recurso, expresado en números decimales de octetos, que ha sido enviado al recipiente.
+- `Content-Type` : Indica el tipo de medio del recurso.
+
+#### Contexto de petición
+
+En esta categoría utilizaremos la cabecera:
+
+- `Host` : Especifica el nombre de dominio del servidor (para alojamiento virtual), y (opcionalmente) el número de puerto TCP en el que está escuchando el servidor.
+- `User-Agent` : Contiene un string característico que será examinado por el protocolo de red para identificar el tipo de aplicación, sistema operativo, proveedor de software o versión del software del agente de software que realiza la petición.
+
+#### Otros
+
+`Date` : Contiene la fecha y la hora en que el mensaje fue originado.

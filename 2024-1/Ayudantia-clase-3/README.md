@@ -31,8 +31,7 @@ En este repositorio encontrarás el contenido de la ayudantía n°3, en donde se
 <details open>
 <summary>Las URLs</summary>
 
-- [¿Qué es una URL?](./Explicacion-URL/URL/URL.md)
-- [Anatomía de una URL](./Explicacion-URL/Anatomia/Anatomia-URL.md)
+- [URLs](./Explicacion-URL/URL.md)
 
 </details>
 
