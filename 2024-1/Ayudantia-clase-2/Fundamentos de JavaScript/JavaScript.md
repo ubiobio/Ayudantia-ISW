@@ -21,5 +21,6 @@ JavaScript es un lenguaje de programación interpretado que se utiliza principal
 - [Métodos de los Arrays](./Contenido/metodosArrays.md)
 - [Objetos](./Contenido/objetos.md)
 - [Asincronismo](./Contenido/asincronismo.md)
+- [Buenas prácticas!](./Contenido/buenasPracticas.md)
 
 </details>
