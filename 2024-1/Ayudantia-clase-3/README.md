@@ -1,3 +1,6 @@
+> [!TIP]
+> ¡Bienvenido! Este repositorio está repleto del material que necesitas para la ayudantía n°3 de Ingeniería de Software. ¡Échale un vistazo y saca el máximo provecho de él!.
+
 ## Ayudantía Ingenieria de Software
 
 En este repositorio encontrarás el contenido de la ayudantía n°3, en donde se realizó:
@@ -18,6 +21,14 @@ En este repositorio encontrarás el contenido de la ayudantía n°3, en donde se
 - [Cabecera HTTP](./FundamentosWeb/Cabeceras/Headers.md)
 - [Cuerpo (Body)](./FundamentosWeb/Cuerpo/Body.md)
 - [Parámetros (Queries)](./FundamentosWeb/Parametros/Queries.md)
+
+</details>
+
+<details open>
+<summary>Requerimientos!</summary>
+
+- [Requerimientos](./requerimientos/requerimientos.md)
+- [Tips para tomar un requerimiento funcional](./requerimientos/requerimientoFuncional.md)
 
 </details>
 
