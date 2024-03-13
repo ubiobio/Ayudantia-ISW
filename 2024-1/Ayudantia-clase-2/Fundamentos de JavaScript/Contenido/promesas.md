@@ -1,7 +1,9 @@
 
 ## Promesas
 
-Una promesa en JavaScript es un objeto que representa la eventual finalización o falla de una operación asíncrona. Las promesas tienen tres estados posibles: pendiente, resuelta o rechazada.
+Como su propio nombre indica, una `promesa` es algo que, en principio pensamos que se cumplirá, pero en el futuro pueden ocurrir varias cosas:
+
+![promesa.png](../../images/promises.png)
 
 ### Ejemplo
 

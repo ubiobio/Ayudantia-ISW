@@ -98,6 +98,17 @@ let resultadoNOT = !true; // NOT lógico
 console.log(resultadoNOT); // Output: false
 ```
 
+| Boolean | Operador lógico | Boolean | Resultado |
+|---------|-----------------|---------|-----------|
+|  true   |       AND       |  true   |   true    |
+|  true   |       AND       |  false  |   false   |
+|  false  |       AND       |  true   |   false   |
+|  false  |       AND       |  false  |   false   |
+|  true   |       OR        |  true   |   false   |
+|  true   |       OR        |  false  |   false   |
+|  false  |       OR        |  true   |   false   |
+|  false  |       OR        |  false  |   false   |
+
 ### Null
 
 - El valor especial `null` no pertenece a ninguno de los tipos descritos anteriormente.
