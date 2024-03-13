@@ -30,11 +30,3 @@ En este repositorio encontrarás el contenido de la ayudantía n°4, en donde se
 - [Reto de la clase](./Reto/reto.md)
 
 </details>
-
-<details open>
-<summary>Requerimientos</summary>
-
-- [Conocimiento sobre los Requerimientos](./requerimientos/requerimientos.md)
-- [Tips para tomar un requerimientos funcional](./requerimientos/requerimientoFuncional.md)
-
-</details>
