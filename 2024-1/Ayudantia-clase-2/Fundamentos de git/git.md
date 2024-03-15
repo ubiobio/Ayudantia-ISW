@@ -32,6 +32,11 @@ Puedes conectar tu repositorio a un servidor remoto, por ejemplo GitHub y así p
 
 - [Branch](./branch.md)
 
+#### Uso de Merge
+
+- [Merge](./merge.md)
+
+
 #### Recomendaciones!
 
 Recuerda que Git está optimizado para trabajar en equipo, por lo tanto, debemos darle un poco de información sobre nosotros. No debemos hacerlo todas las veces que ejecutamos un comando, basta con ejecutar solo una sola vez los siguientes comandos con tu información:
