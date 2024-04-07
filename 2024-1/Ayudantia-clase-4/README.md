@@ -25,7 +25,7 @@ En este repositorio encontrarás el contenido de la ayudantía n°4, en donde se
 <summary>CRUD con Base de Datos!</summary>
 
 - [Código](./CRUD-Database/)
-- [Conexión a MongoDB Atlas](./Conexion-MongoDB/mongodb.md)
+- [Base de datos con MongoDB](./MongoDB/README.md)
 - [Peticiones a los endpoints](./Postman-Endpoints/Endpoints.md)
 - [Reto de la clase](./Reto/reto.md)
 
